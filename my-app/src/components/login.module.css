@@ -1,0 +1,118 @@
+/* Login.module.css */
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the container covers the full viewport height */
+  width: 100vh;
+  background: linear-gradient(
+    to right,
+    #4e54c8,
+    #8f94fb
+  ); /* Gradient background */
+  padding: 20px; /* Add some padding to prevent content from touching edges */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.loginCard {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  padding: 40px; /* Padding for the card */
+  width: 400px; /* Fixed width for larger screens */
+  max-width: 100%; /* Use full width on smaller screens */
+  transition: all 0.3s ease; /* Smooth transition for scaling */
+}
+
+.loginCard:hover {
+  transform: translateY(-5px); /* Slight lift on hover for interactivity */
+}
+
+.loginTitle {
+  font-size: 28px; /* Title size */
+  font-weight: bold;
+  margin-bottom: 20px; /* Margin below the title */
+  text-align: center; /* Center the title */
+  color: #333; /* Darker color for better readability */
+}
+
+.inputField {
+  width: 100%; /* Full width for input fields */
+  padding: 12px; /* Padding for input fields */
+  margin-bottom: 20px; /* Margin below each input */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Comfortable font size */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.inputField:focus {
+  border-color: #4e54c8; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(78, 84, 200, 0.5); /* Subtle shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.loginButton {
+  width: 100%; /* Full width for button */
+  padding: 12px; /* Padding for button */
+  background-color: #4e54c8; /* Button color */
+  color: white;
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Button font size */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth background transition */
+}
+
+.loginButton:hover {
+  background-color: #8f94fb; /* Lighter color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.forgotPassword {
+  margin-top: 10px; /* Space above */
+  font-size: 14px; /* Smaller text */
+  color: #666; /* Light grey text */
+  text-align: center; /* Center-align text */
+  display: block; /* Ensure it takes up a full line */
+}
+
+.footerText {
+  margin-top: 20px; /* Space above */
+  font-size: 14px; /* Smaller text */
+  color: #666; /* Light grey text */
+  text-align: center; /* Center-align footer text */
+}
+
+.footerText a {
+  color: #4e54c8; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footerText a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .loginCard {
+    width: 90%; /* Use more width on mobile */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .loginTitle {
+    font-size: 24px; /* Smaller title font size */
+  }
+
+  .inputField {
+    font-size: 14px; /* Smaller font size for input fields */
+  }
+
+  .loginButton {
+    font-size: 16px; /* Smaller button font size */
+  }
+
+  .footerText {
+    font-size: 12px; /* Smaller footer text size */
+  }
+}
